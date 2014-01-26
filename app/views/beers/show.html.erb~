@@ -16,9 +16,9 @@
 </p>
 <p>
 <% if @beer.ratings.empty? %>
-Beer has not yer been rated!
+Beer has not yet been rated!
 <% else %>
-Has <%= @beer.ratings.count %> <%= pluralize(@beer.ratings.count, 'rating') %>, average <%= @beer.average_rating %>
+Has <%= pluralize(@beer.ratings.count, 'rating') %>, average <%= @beer.average_rating %>
 <% end %>
 
 </p>

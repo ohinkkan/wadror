@@ -81,7 +81,6 @@ class BreweriesController < ApplicationController
 		if admin_accounts.has_key?(username)
 			password == admin_accounts.fetch(username)
 		else false
-		end
 	end
     end
 end
